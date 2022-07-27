@@ -7,7 +7,7 @@ export default function AntdLoader(props: {loading: boolean}) {
     position: 'absolute',
     top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
   }
 
   return <Spin spinning={loading} size="large" style={style}/>;

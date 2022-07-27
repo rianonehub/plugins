@@ -74,9 +74,9 @@ export const localeInfo: {[key: string]: any} = {
 export const addLocale = (
   name: string,
   messages: Object,
-  extraLocales: {
-    momentLocale:string;
-    antd:string
+  extraLocales?: {
+    momentLocale: string;
+    antd: string;
   },
 ) => {
   if (!name) {
@@ -159,7 +159,7 @@ export const getLocale = () => {
   // please clear localStorage if you change the baseSeparator config
   // because changing will break the app
   const lang =
-    typeof localStorage !== 'undefined' && useLocalStorage
+    navigator.cookieEnabled && typeof localStorage !== 'undefined' && useLocalStorage
       ? window.localStorage.getItem('umi_locale')
       : '';
   // support baseNavigator, default true
@@ -194,8 +194,6 @@ export const getDirection = () => {
  * @returns string
  */
 export const setLocale = (lang: string, realReload: boolean = true) => {
-  const localeExp = new RegExp(`^([a-z]{2}){{BaseSeparator}}?([A-Z]{2})?$`);
-
   const runtimeLocale = plugin.applyPlugins({
     key: 'locale',
     type: ApplyPluginsType.modify,
@@ -203,12 +201,8 @@ export const setLocale = (lang: string, realReload: boolean = true) => {
   });
 
   const updater = () => {
-    if (lang !== undefined && !localeExp.test(lang)) {
-      // for reset when lang === undefined
-      throw new Error('setLocale lang format error');
-    }
     if (getLocale() !== lang) {
-      if (typeof window.localStorage !== 'undefined' && useLocalStorage) {
+      if (navigator.cookieEnabled && typeof window.localStorage !== 'undefined' && useLocalStorage) {
         window.localStorage.setItem('umi_locale', lang || '');
       }
       setIntl(lang);

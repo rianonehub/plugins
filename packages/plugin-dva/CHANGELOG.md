@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.2](https://github.com/umijs/plugins/compare/@umijs/plugin-dva@0.13.1...@umijs/plugin-dva@0.13.2) (2022-04-25)
+
+### Bug Fixes
+
+- **locale:** fix addRuntimePlugin use absolute path ([#826](https://github.com/umijs/plugins/issues/826)) ([b7506e6](https://github.com/umijs/plugins/commit/b7506e60df96be98506cc1818e6ce1a5540ba959))
+
+## [0.13.1](https://github.com/umijs/plugins/compare/@umijs/plugin-dva@0.13.0...@umijs/plugin-dva@0.13.1) (2021-12-14)
+
+### Bug Fixes
+
+- **Ava:** export shallowEqual from plugin-dva and type Reducer state remove undefined ([#206](https://github.com/umijs/plugins/issues/206)) ([e302a84](https://github.com/umijs/plugins/commit/e302a84f99250aa14e45776e9a42fdc32b18ebe2))
+- **dva:** bumped dva-immer ([#611](https://github.com/umijs/plugins/issues/611)) ([36700a5](https://github.com/umijs/plugins/commit/36700a53216cfdab7229ba07c12790f2d2c1ae47))
+
 # [0.13.0](https://github.com/umijs/plugins/compare/@umijs/plugin-dva@0.12.1...@umijs/plugin-dva@0.13.0) (2021-06-03)
 
 ### Features

@@ -162,7 +162,7 @@ app.model({ namespace: '${basename(path, extname(path))}', ...Model${lodash.uppe
       );
       const dvaVersion = require(join(dvaLibPath, 'package.json')).version;
       const exportMethods = dvaVersion.startsWith('2.6')
-        ? ['connect', 'useDispatch', 'useStore', 'useSelector']
+        ? ['connect', 'useDispatch', 'useStore', 'useSelector', 'shallowEqual']
         : ['connect'];
 
       logger.debug(`dva version: ${dvaVersion}`);
@@ -227,9 +227,7 @@ app.model({ namespace: '${basename(path, extname(path))}', ...Model${lodash.uppe
   });
 
   // Runtime Plugin
-  api.addRuntimePlugin(() =>
-    hasModels ? [join(api.paths.absTmpPath!, 'plugin-dva/runtime.tsx')] : [],
-  );
+  api.addRuntimePlugin(() => (hasModels ? ['../plugin-dva/runtime.tsx'] : []));
   api.addRuntimePluginKey(() => (hasModels ? ['dva'] : []));
 
   // 导出内容

@@ -2,6 +2,92 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.39.2](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.39.1...@umijs/plugin-qiankun@2.39.2) (2022-06-08)
+
+### Bug Fixes
+
+- **qiankun:** 兼容已经使用 alias 作为 props 使用的场景 ([#866](https://github.com/umijs/plugins/issues/866)) ([7e4f46f](https://github.com/umijs/plugins/commit/7e4f46f5994ba7abf6f71dc20b3a768e67d27219))
+
+## [2.39.1](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.39.0...@umijs/plugin-qiankun@2.39.1) (2022-06-08)
+
+**Note:** Version bump only for package @umijs/plugin-qiankun
+
+# [2.39.0](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.38.0...@umijs/plugin-qiankun@2.39.0) (2022-06-07)
+
+### Features
+
+- 支持为 MicroApp 配置 name 键的别名 ([#863](https://github.com/umijs/plugins/issues/863)) ([b7dbe19](https://github.com/umijs/plugins/commit/b7dbe193bde8058bfd805c50032abb50c458939c))
+
+# [2.38.0](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.37.2...@umijs/plugin-qiankun@2.38.0) (2022-06-07)
+
+### Features
+
+- **qiankun:** 检查是否因为用户本地的配置的 app ，导致 app 冲突 ([#839](https://github.com/umijs/plugins/issues/839)) ([b3a05ee](https://github.com/umijs/plugins/commit/b3a05ee8be65804443a8cf70cbca782dc5d60cfd))
+
+## [2.37.2](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.37.1...@umijs/plugin-qiankun@2.37.2) (2022-04-01)
+
+### Bug Fixes
+
+- **plugin-qiankun:** 修复重定向问题 ([#822](https://github.com/umijs/plugins/issues/822)) ([78a04d6](https://github.com/umijs/plugins/commit/78a04d64e3ee408c1ea4f2782d2c366442fefd61))
+
+## [2.37.1](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.37.0...@umijs/plugin-qiankun@2.37.1) (2022-03-24)
+
+### Bug Fixes
+
+- **qiankun:** 修复合并路由丢失的问题 ([#819](https://github.com/umijs/plugins/issues/819)) ([dad0e9a](https://github.com/umijs/plugins/commit/dad0e9ad8f465c7c82bf9f8bb1d763ec7faa2612))
+
+# [2.37.0](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.36.0...@umijs/plugin-qiankun@2.37.0) (2022-03-18)
+
+### Features
+
+- **plugin-qiankun:** 一行配置即可本地研发子应用时能够看到主子应用嵌套场面 ([#813](https://github.com/umijs/plugins/issues/813)) ([837b06b](https://github.com/umijs/plugins/commit/837b06b92b19d5b950022ec60ec0129983fb50e5))
+
+# [2.36.0](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.5...@umijs/plugin-qiankun@2.36.0) (2022-02-15)
+
+### Bug Fixes
+
+- **qiankun:** 修复类型问题 ([#799](https://github.com/umijs/plugins/issues/799)) ([e81f1db](https://github.com/umijs/plugins/commit/e81f1dbba7062e76304a0224a0bef6ac0a62ffa4))
+
+### Features
+
+- **qiankun:** 微应用支持 insertBefore 路由([#796](https://github.com/umijs/plugins/issues/796)) ([a50cd83](https://github.com/umijs/plugins/commit/a50cd83fabefb164cdbe57ae8bbb1e9bc274f58e))
+
+## [2.35.5](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.4...@umijs/plugin-qiankun@2.35.5) (2022-02-08)
+
+**Note:** Version bump only for package @umijs/plugin-qiankun
+
+## [2.35.4](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.3...@umijs/plugin-qiankun@2.35.4) (2021-12-14)
+
+### Bug Fixes
+
+- **qiankun:** loading 结束后需要隐藏 loading 容器 ([#765](https://github.com/umijs/plugins/issues/765)) ([76932de](https://github.com/umijs/plugins/commit/76932de41b0da9088aff6cccc8618593768aa05b))
+- **qiankun:** 修复 loading class 为 undefined 的问题 ([#766](https://github.com/umijs/plugins/issues/766)) ([3093b0a](https://github.com/umijs/plugins/commit/3093b0a32b09b75629fa93ab14aedb30acf0b4aa))
+
+## [2.35.3](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.2...@umijs/plugin-qiankun@2.35.3) (2021-12-14)
+
+### Bug Fixes
+
+- **qiankun:** add default classname and new laoding style ([#758](https://github.com/umijs/plugins/issues/758)) ([9a7f434](https://github.com/umijs/plugins/commit/9a7f4342e2d5694bcf7e8cad5b539cd91ad15d11))
+- Minimize the use of the lodash module ([#643](https://github.com/umijs/plugins/issues/643)) ([928b447](https://github.com/umijs/plugins/commit/928b447581ee6e40fd433c9ba1016ef3c68b363e))
+
+## [2.35.2](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.1...@umijs/plugin-qiankun@2.35.2) (2021-11-04)
+
+### Bug Fixes
+
+- **qiankun:** 默认 mfName 值替换掉报名里的特殊字符 ([#737](https://github.com/umijs/plugins/issues/737)) ([b291dab](https://github.com/umijs/plugins/commit/b291dabbc48585232e404d815bf68ca7ae4d708a))
+
+## [2.35.1](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.35.0...@umijs/plugin-qiankun@2.35.1) (2021-11-01)
+
+### Bug Fixes
+
+- **qiankun:** 修复初始化时 error 状态变更触发了 loop rendering 的问题 ([#735](https://github.com/umijs/plugins/issues/735)) ([bbec8b7](https://github.com/umijs/plugins/commit/bbec8b7b8864b416643b1a5ef00fca18c25182a1))
+
+# [2.35.0](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.34.1...@umijs/plugin-qiankun@2.35.0) (2021-10-26)
+
+### Features
+
+- 支持 mfsu 开启场景 ([#699](https://github.com/umijs/plugins/issues/699)) ([43f6485](https://github.com/umijs/plugins/commit/43f648519dc3bd67f0898e35da5d570f3d3cdbde))
+
 ## [2.34.1](https://github.com/umijs/plugins/compare/@umijs/plugin-qiankun@2.34.0...@umijs/plugin-qiankun@2.34.1) (2021-10-15)
 
 ### Bug Fixes

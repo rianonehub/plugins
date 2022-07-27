@@ -1,4 +1,5 @@
 export default {
+  publicPath: 'http://localhost:8000/',
   proxy: {
     '/api/app1': {
       target: 'http://localhost:8001',
@@ -14,7 +15,9 @@ export default {
     },
   },
   qiankun: {
-    master: {},
+    master: {
+      appNameKeyAlias: 'id'
+    },
   },
   routes: [
     {
